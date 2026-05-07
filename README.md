@@ -12,6 +12,12 @@ public User findUserById(long id) {
     return repository.findById(id).orElse(null);
 }
 ```
+Here is a video of the working extension!
+
+
+https://github.com/user-attachments/assets/41f19d3e-be43-4fd2-8b1a-c91d168de378
+
+
 
 ## Project overview
 
