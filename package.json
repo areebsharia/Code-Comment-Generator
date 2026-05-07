@@ -1,0 +1,55 @@
+{
+  "name": "code-commenter",
+  "displayName": "Code-Comment Generator",
+  "description": "Generate natural-language comments for selected Java code using a fine-tuned CodeT5 model.",
+  "version": "0.2.0",
+  "engines": {
+    "vscode": "^1.70.0"
+  },
+  "categories": ["Other"],
+  "activationEvents": [
+    "onCommand:code-commenter.generate"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "code-commenter.generate",
+        "title": "Code Commenter: Generate Comment for Selection"
+      }
+    ],
+    "configuration": {
+      "title": "Code-Comment Generator",
+      "properties": {
+        "codeCommenter.serverUrl": {
+          "type": "string",
+          "default": "http://localhost:8000/generate",
+          "description": "URL of the model inference server. For Colab + ngrok, use the public ngrok URL with /generate appended."
+        },
+        "codeCommenter.timeoutMs": {
+          "type": "number",
+          "default": 30000,
+          "description": "Request timeout in milliseconds."
+        }
+      }
+    },
+    "menus": {
+      "editor/context": [
+        {
+          "when": "editorHasSelection",
+          "command": "code-commenter.generate",
+          "group": "1_modification"
+        }
+      ]
+    }
+  },
+  "scripts": {
+    "test": "echo \"No tests yet\""
+  },
+  "dependencies": {
+    "axios": "^1.6.0"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.70.0"
+  }
+}

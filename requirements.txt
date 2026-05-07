@@ -1,0 +1,21 @@
+torch>=2.0.0
+transformers==4.40.0
+tokenizers>=0.15.0
+sentencepiece
+datasets==2.18.0
+sacrebleu
+rouge-score
+nltk
+
+# Server
+fastapi
+uvicorn[standard]
+pydantic>=2.0.0
+pyngrok
+nest-asyncio
+
+# Notebook utilities
+numpy
+pandas
+matplotlib
+seaborn
