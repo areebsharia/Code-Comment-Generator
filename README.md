@@ -17,6 +17,11 @@ Here are videos of the working extension!
 https://github.com/user-attachments/assets/09135e20-7fba-492e-8e14-0ba83ab7ad88
 
 
+
+https://github.com/user-attachments/assets/4ee6a8b3-35a1-4bf6-8701-9f294d9c0f62
+
+
+
 ## Project overview
 
 The project implements two distinct seq2seq approaches and compares them on the same held-out test set:
