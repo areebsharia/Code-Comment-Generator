@@ -81,7 +81,6 @@ The fine-tuned CodeT5 wins decisively on both metrics. The from-scratch model pr
 
 ### 1. Train the models
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/YOUR-USERNAME/code-comment-generator/blob/main/code_comment_generator.ipynb)
 
 Open the notebook in Colab, set runtime to GPU (T4 is sufficient), and run all cells. Approximate runtime on a free T4:
 
